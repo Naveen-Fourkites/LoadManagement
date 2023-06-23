@@ -1,6 +1,7 @@
-package com.example.navdi.Controller;
+package com.example.demo.Controller;
 
-import com.example.navdi.Repository.LoadRepository;
+
+import com.example.demo.Repository.LoadRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,12 +18,13 @@ public class Mycontroller {
 
 
 
-    @RequestMapping("LoadsData")
+    @RequestMapping("/LoadsData")
     public String getLoaddata(Model model){
 
         model.addAttribute("Loaddata",loadRepository.findAll());
 
-        return "Loaddata/list";
+
+        return "LoadsData/list";
 
     }
 }

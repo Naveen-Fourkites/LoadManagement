@@ -1,7 +1,7 @@
-package com.example.navdi.Repository;
+package com.example.demo.Repository;
 
-import com.example.navdi.Domain.Loads;
+import com.example.demo.domain.Loads;
 import org.springframework.data.repository.CrudRepository;
 
-public interface LoadRepository extends CrudRepository<Loads , Long> {
+public interface LoadRepository extends CrudRepository<Loads, Long> {
 }
